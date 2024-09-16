@@ -21,6 +21,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Alivenesstrends.io Server is running on port ${PORT}`);
 });
 
