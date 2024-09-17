@@ -4,71 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlivenessTrends.io</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">AlivenessTrends.io</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Trends</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#" class="button">Sign Up</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">AlivenessTrends.io</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Discover
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Local Festivals</a>
+                            <a class="dropdown-item" href="#">Emerging Art Scenes</a>
+                            <a class="dropdown-item" href="#">Music</a>
+                            <a class="dropdown-item" href="#">Daily Life</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Share Your Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-        </div>
     </header>
-
     <section class="hero">
-        <div class="hero-content">
-            <h1>Discover the Pulse of Wellness and Innovation</h1>
-            <p>Explore the latest trends shaping our lives</p>
-            <a href="#" class="button">Explore Trends</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Welcome to AlivenessTrends.io</h1>
+                    <p>Your hub for discovering and sharing the vibrant trends that shape our everyday lives</p>
+                    <button class="btn btn-primary">Explore Trends</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="hero-image.jpg" alt="Hero Image">
+                </div>
+            </div>
         </div>
     </section>
-
     <section class="featured-trends">
-        <h2>Featured Trends</h2>
-        <div class="trend-grid">
-            <!-- Add trend items here -->
+        <div class="container">
+            <h2>Featured Trends</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="trend-image-1.jpg" alt="Trend Image 1">
+                        <h3>Trend Title 1</h3>
+                        <p>Trend description 1</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="trend-image-2.jpg" alt="Trend Image 2">
+                        <h3>Trend Title 2</h3>
+                        <p>Trend description 2</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="trend-image-3.jpg" alt="Trend Image 3">
+                        <h3>Trend Title 3</h3>
+                        <p>Trend description 3</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section class="community-contributions">
-        <h2>Community Stories</h2>
-        <div class="story-grid">
-            <!-- Add community stories here -->
-        </div>
-        <a href="#" class="button">Share Your Story</a>
-    </section>
-
-    <section class="interactive-map">
-        <h2>Interactive Trends Map</h2>
-        <div class="map">
-            <!-- Placeholder for interactive map -->
+    <section class="community">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <p>A collaborative space where writers, bloggers, and creators can share their unique perspectives on the trends that matter most</p>
+            <button class="btn btn-primary">Share Your Story</button>
         </div>
     </section>
-
-    <section class="newsletter-signup">
-        <h2>Stay Updated</h2>
-        <p>Sign up for our newsletter to get the latest trends directly in your inbox.</p>
-        <input type="email" placeholder="Enter your email">
-        <button class="button">Sign Up</button>
+    <section class="about-us">
+        <div class="container">
+            <h2>About AlivenessTrends.io</h2>
+            <p>We're here to capture the pulse of life and share it with the world. Let's celebrate the ordinary and make it extraordinary, together</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
     </section>
-
     <footer>
-        <div class="footer-links">
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-        </div>
-        <div class="social-media">
-            <!-- Add social media icons here -->
+        <div class="container">
+            <p>&copy; 2023 AlivenessTrends.io</p>
+            <ul class="social-media-links">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></ i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
